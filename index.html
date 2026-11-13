@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reine Esther Bengono | Portfolio Génie Logiciel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#accueil" class="logo"><span>&lt;</span>REB<span>/&gt;</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact" class="btn-nav">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Section Accueil (Hero) -->
+  <section id="accueil" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge">Étudiante en Génie Logiciel — Niveau 3</span>
+        <h1>Bonjour, je suis <span class="highlight">Reine Esther Bengono</span></h1>
+        <p class="subtitle">
+          Développeuse d'applications mobiles &amp; web basée à Yaoundé, Cameroun. Je conçois des solutions logicielles robustes, ergonomiques et orientées vers la résolution de besoins concrets.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projets" class="btn btn-primary">Découvrir mes projets</a>
+          <a href="https://github.com/bengonoreineesther-crypto" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Profil GitHub</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="code-window">
+          <div class="window-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="file-name">developer.json</span>
+          </div>
+          <pre class="code-body"><code>{
+  "nom": "Reine Esther Bengono",
+  "formation": "Génie Logiciel (Licence 3)",
+  "localisation": "Yaoundé, Cameroun",
+  "specialites": [
+    "Développement Mobile (Flutter/Dart)",
+    "Développement Web & API (PHP/MySQL)",
+    "Versionnement & Collaboration (Git)"
+  ],
+  "disponibilite": "Stage / Projets Académiques"
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section À propos -->
+  <section id="apropos" class="section">
+    <div class="container">
+      <h2 class="section-title">À propos de moi</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Actuellement en troisième année de <strong>Génie Logiciel</strong> à Yaoundé, je me passionne pour l'architecture logicielle, le développement d'applications multiplateformes et la conception de bases de données relationnelles.
+          </p>
+          <p>
+            Mon approche repose sur la rigueur technique, la clarté du code et l'adaptation aux réalités du terrain, qu'il s'agisse de modéliser un moteur de calcul énergétique ou de sécuriser des transactions financières multi-devises.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-box">
+            <h3>L3</h3>
+            <p>Génie Logiciel</p>
+          </div>
+          <div class="stat-box">
+            <h3>Full-Stack</h3>
+            <p>Mobile &amp; Web</p>
+          </div>
+          <div class="stat-box">
+            <h3>Git / GitHub</h3>
+            <p>Travail collaboratif</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section id="competences" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Compétences Techniques</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Développement Mobile</h3>
+          <ul>
+            <li>Flutter (Interfaces multiplateformes)</li>
+            <li>Langage Dart</li>
+            <li>Tests &amp; débogage physique via ADB</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Développement Web &amp; Back-End</h3>
+          <ul>
+            <li>HTML5 / CSS3 / JavaScript</li>
+            <li>PHP (Services &amp; logique métier)</li>
+            <li>MySQL &amp; structuration JSON</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Outils &amp; Architecture</h3>
+          <ul>
+            <li>Git &amp; GitHub (Branches, Organisations)</li>
+            <li>Visual Studio Code &amp; PowerShell</li>
+            <li>Architecture des ordinateurs &amp; Réseaux</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets -->
+  <section id="projets" class="section">
+    <div class="container">
+      <h2 class="section-title">Mes Projets Réalisés</h2>
+      <div class="projects-grid">
+        <!-- Projet 1 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Projet de Soutenance</span>
+            <h3>MyDevis Solar</h3>
+          </div>
+          <p class="project-desc">
+            Plateforme logicielle d'aide au dimensionnement d'installations solaires photovoltaïques : calcul automatique de la consommation énergétique, dimensionnement des équipements et génération de devis technico-financiers.
+          </p>
+          <div class="tech-tags">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>Calcul Énergétique</span>
+          </div>
+        </article>
+
+        <!-- Projet 2 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Projet Académique (Groupe 14)</span>
+            <h3>Portefeuille Électronique Multi-Devises</h3>
+          </div>
+          <p class="project-desc">
+            Conception et rédaction du cahier des charges ainsi que développement d'un simulateur de transferts et de conversion de devises (XAF, NGN, USD, EUR) intégrant le calcul des frais et le suivi des transactions.
+          </p>
+          <div class="tech-tags">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>GitHub</span>
+            <span>Cahier des charges</span>
+          </div>
+        </article>
+
+        <!-- Projet 3 -->
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-tag">Développement Web</span>
+            <h3>Portfolio Numérique Personnel</h3>
+          </div>
+          <p class="project-desc">
+            Conception d'une vitrine web responsive présentant mon parcours en génie logiciel, ma stack technique et mes réalisations académiques avec gestion de versions sous Git.
+          </p>
+          <div class="tech-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section id="contact" class="section bg-alt">
+    <div class="container contact-box">
+      <h2 class="section-title">Me Contacter</h2>
+      <p>Disponible pour échanger autour de mes projets académiques, de collaborations techniques ou d'opportunités de stage en génie logiciel.</p>
+      <div class="contact-links">
+        <a href="https://github.com/bengonoreineesther-crypto" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          GitHub : @bengonoreineesther-crypto
+        </a>
+        <a href="mailto:contact@reine-bengono.cm" class="btn btn-secondary">
+          Envoyer un e-mail
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Reine Esther Bengono — Tous droits réservés. Conçu dans le cadre du cursus Génie Logiciel (Niveau 3).</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
